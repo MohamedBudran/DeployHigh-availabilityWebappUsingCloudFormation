@@ -335,7 +335,7 @@ Resources:
             IamInstanceProfile: !Ref ProfileWithRolesForOurApp
             SecurityGroups:
             -   Ref: WebServerSecGroup
-            InstanceType: !Ref 'InstanceType'  #  two vCPUs, memory: 4GB, ref to t2.medium
+            InstanceType: !Ref 'InstanceType'  #  two vCPUs, memory: 4GB, ref to t3.small
             BlockDeviceMappings:
             -   DeviceName: "/dev/sdk"
                 Ebs:
